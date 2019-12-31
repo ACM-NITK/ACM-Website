@@ -729,7 +729,9 @@ h3 {
 
 .banner_content {
   color: #fff;
-}
+  position: relative;
+  animation: animateup 2s 0.3s;
+} @keyframes animateup{from{bottom: -50px;opacity:0} to{bottom:0px;opacity:1}}
 
 .banner_content h6 {
   font-size: 14px;
@@ -3639,3 +3641,36 @@ h1, h2, h3, h4, h5, h6 {
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
+
+@keyframes animate-up {
+	from{
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+@keyframes animate-left {
+	from{
+		opacity: 0;
+		transform: translateX(-200px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+@keyframes animate-right {
+	from{
+		opacity: 0;
+		transform: translateX(200px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
