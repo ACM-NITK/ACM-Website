@@ -730,8 +730,7 @@ h3 {
 .banner_content {
   color: #fff;
   position: relative;
-  animation: animateup 2s 0.3s;
-} @keyframes animateup{from{bottom: -50px;opacity:0} to{bottom:0px;opacity:1}}
+} 
 
 .banner_content h6 {
   font-size: 14px;
