@@ -1,4 +1,4 @@
-const ani_navbar = document.querySelectorAll('.nav-item , .btn_hover_two');
+const ani_navbar = document.querySelectorAll('.btn_hover_two');
 const ani_head = document.querySelectorAll('h1,h2,h3,h4');
 const ani_text = document.querySelectorAll('p,.listItem , .view_btn');
 
@@ -37,15 +37,6 @@ ani_head.forEach((ani_head) => {
 ani_text.forEach((ani_text) => {
 	observer_text.observe(ani_text)
 })
-
-let test = document.querySelector(".navbar-brand");
-test.addEventListener('mouseenter',function(event){
-	let image = event.target.querySelector('img') ;
-	image.style.height = "70px";
-	setTimeout(function(){
-		image.style.height = "50px";
-	},2500);
-});
 
 $(document).ready(function() {
 	// Header Scroll
